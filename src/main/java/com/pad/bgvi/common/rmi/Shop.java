@@ -8,4 +8,6 @@ import com.pad.bgvi.common.model.Article;
 
 public interface Shop extends Remote {
     List<Article> getArticles() throws RemoteException;
+    
+    void buyArticles(List<Article> articles) throws RemoteException;
 }
